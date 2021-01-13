@@ -1,0 +1,45 @@
+{
+  "name": "covid19",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.2.2",
+    "@testing-library/user-event": "^12.5.0",
+    "axios": "^0.21.0",
+    "date-fns": "^2.16.1",
+    "node-sass": "^4.14.1",
+    "react": "^17.0.1",
+    "react-custom-scrollbars": "^4.2.1",
+    "react-dom": "^17.0.1",
+    "react-draggable": "^4.4.3",
+    "react-google-charts": "^3.0.15",
+    "react-lazy-load-image-component": "^1.5.1",
+    "react-scripts": "4.0.1",
+    "react-spinners": "^0.9.0",
+    "world-map-country-shapes": "^1.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

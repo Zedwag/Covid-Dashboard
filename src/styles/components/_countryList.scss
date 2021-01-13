@@ -1,0 +1,112 @@
+.country-list-container {
+    width: 25vw;
+    background-color: white;
+    z-index: 1000;
+    margin: 2rem;
+    overflow: hidden;
+    min-width: 230px;
+}
+
+.country-list-container-fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    z-index: 9999;
+}
+
+.expanded .country-list {
+    margin: 0 auto;
+}
+
+.country-list {
+    overflow: hidden;
+    padding: 1em 0;
+    max-width: 400px;
+
+    table {
+        width: 94%;
+        border-collapse: collapse;
+    }
+}
+
+.country-list-fullscreen {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.country-list-item {
+    cursor: pointer;
+    text-align: left;
+
+    td {
+        padding: 0.3em;
+        line-height: 1.2em;
+    }
+
+    td:last-child {
+        text-align: right;
+        font-weight: 600;
+    }
+}
+
+.country-list-item:hover {
+    border: 1px solid #3e3e3e;
+}
+
+.country-list-item_selected {
+    border: 1px solid #808080;
+    background: cornsilk;
+}
+
+.country-list-item-flag {
+    height: auto;
+    width: 1.3rem;
+    border: 1px solid #ccc;
+}
+
+.fullscreen-button {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 0.3rem;
+    right: 0.3rem;
+    outline: none;
+}
+
+.fullscreen-image {
+    width: 100%;
+    height: auto;
+}
+
+.row-search {
+    display: flex;
+    align-items: center;
+     margin: 0.5em 0.9em;
+    justify-content: left;
+}
+
+#searсh {
+    width: 100%;
+    line-height: 1.5em;
+    border: 1px solid #9c9c9c;
+    padding: 0.15em 0.5em;
+}
+
+.v-keyboard {
+    display: flex;
+    margin-left: 0.4em;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0;
+
+    svg {
+        margin-right: 0;
+    }
+}

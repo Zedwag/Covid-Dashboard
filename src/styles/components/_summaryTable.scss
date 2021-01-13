@@ -1,0 +1,60 @@
+.summary-wrapper {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    z-index: 1000;
+    margin: 2rem;
+    border-radius: 10px;
+}
+.tables-wrap {
+    .period-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+}
+
+.summaries-table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+    background: #fff;
+
+    .current-country {
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+
+    .title {
+        margin-top: 0.8em;
+    }
+
+    th {
+        font-weight: normal;
+    }
+
+    tr {
+        border: 1px solid #ddd;
+    }
+
+    th,
+    td {
+        text-align: center;
+        padding: 0.5em;
+    }
+
+}
+
+.tables-filters-wrap {
+    padding: 15px 10px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #ccc;
+    align-items: center;
+
+}

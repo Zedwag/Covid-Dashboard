@@ -1,0 +1,56 @@
+#tooltip {
+    position: absolute;
+    display: none;
+    background: cornsilk;
+    border: 1px solid black;
+    border-radius: 0px;
+    font-size: 0.8em;
+    padding: 5px;
+
+    h5 {
+        margin: 0;
+        font-size: 1.2em;
+    }
+
+    td {
+         font-size: 1.1em;
+    }
+}
+
+.world-map-container {
+height: 100vh;
+overflow: hidden;
+}
+
+.map-legend {
+position: absolute;
+bottom: 0;
+width: 350px;
+margin-left: calc(50% - 175px);
+margin-bottom: 1.5vw;
+background: rgba(255, 255, 255, 0.9);
+
+.filters {
+flex-direction: column;
+justify-content: space-around;
+align-items: baseline;
+padding: 0.4em;
+}
+
+table {
+h4 {
+margin-top: -4px;
+}
+
+td {
+text-align: right;
+
+span {
+    margin-left: 1em;
+}
+}
+td:last-child {
+width: 20%;
+}
+}
+}
