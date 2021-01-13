@@ -1,0 +1,115 @@
+.keyboard {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 5px 0;
+    background: #808080;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    user-select: none;
+    transition: bottom 0.4s;
+    max-height: 300px;
+    z-index: 6005;
+}
+
+.keyboard--hidden {
+    bottom: -100%;
+}
+
+.keyboard__keys {
+    text-align: center;
+}
+
+.keyboard__key {
+    height: 5vw;
+    max-height: 53px;
+    width: 5.3vw;
+    max-width: 56px;
+    margin: 3px;
+    border-radius: 4px;
+    border: none;
+    background: rgba(255, 255, 255, 0.9);
+    color: #636363;
+    font-size: 1.05rem;
+    outline: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    transition: background ease-in 0.2s;
+}
+.keyboard__key--wide {
+    max-width: 90px;
+}
+.keyboard__key:active, .keyboard__key:focus, .keyboard__key.focus {
+    background-color:  rgb(48 193 164) !important;
+    transition: background-color ease-in 0.3s;
+}
+
+.keyboard__key:hover, .keyboard__key.active {
+    background: rgba(255, 255, 255, 0.5);
+    transition: background ease-in 0.1s;
+}
+
+.keyboard__key--wide {
+    width: 12%;
+}
+
+.keyboard__key--extra-wide {
+    width: 36%;
+    max-width: 500px;
+}
+
+.keyboard__key--activatable::after {
+    content: '';
+    top: 10px;
+    right: 10px;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+}
+
+.keyboard__key--active::after {
+    background: #08ff00;
+}
+
+.keyboard__key--dark {
+
+}
+
+textarea, textarea:focus {
+    border: 3px solid #000;
+}
+#container{
+    display: flex;
+}
+h1 {
+    text-align: center;
+    font-size: calc(2.5vw + 8px);
+}
+textarea {
+    width: 100%;
+    height: 50vh;
+    padding: 10px;
+    max-height: 400px;
+}
+
+@media screen and (max-width: 600px) {
+    .keyboard__key {
+        font-size: 0.9rem;
+    }
+    .keyboard__key--activatable::after {
+        right: 5px;
+        width: 5px;
+        height: 5px;
+    }
+    .material-icons {
+        font-size: 16px !important;
+    }
+}
